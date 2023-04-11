@@ -28,9 +28,7 @@ class Ventana5 extends JFrame {
         ActionListener listener = new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 if (ae.getSource() == btnStart) {
-                    // sonido = new Sonido("sounds/mario1v2.wav"); //Formato de 8 bits
-                    // Marnie Battle Theme
-                    //sonido = new Sonido("sounds/marniebattletheme.wav"); // Formato de 8 bits
+                    // Cancioncita
                     sonido = new Sonido("sounds/Circus-Charlie-8Bit.wav"); // Formato de 8 bits
                     Thread t = new Thread(monito);
                     t.start();

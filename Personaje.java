@@ -100,7 +100,6 @@ public class Personaje extends JLabel implements Runnable, KeyListener {
     }// end run
 
     private void winner() {
-        //System.out.println("Posicion X: " + posX);
         if (posX > 600) {
             pausarHilo();
             JOptionPane.showMessageDialog(null, "EASY PEASY LEMON SQUEEZY (^-^) \n" + score.getText());
@@ -129,7 +128,6 @@ public class Personaje extends JLabel implements Runnable, KeyListener {
         }
     }// end idleanimation
 
-    // Controles del juego y música
     // Pausar
     synchronized public void pausarHilo() {
         pausar = true;

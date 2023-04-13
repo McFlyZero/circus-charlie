@@ -100,10 +100,10 @@ public class Personaje extends JLabel implements Runnable, KeyListener {
     }// end run
 
     private void winner() {
-        System.out.println("Posicion X: " + posX);
+        //System.out.println("Posicion X: " + posX);
         if (posX > 600) {
             pausarHilo();
-            JOptionPane.showMessageDialog(null, "EASY PEASY LEMON SQUEEZY (^-^) /n" + score.getText());
+            JOptionPane.showMessageDialog(null, "EASY PEASY LEMON SQUEEZY (^-^) \n" + score.getText());
             stopHilo();
             System.exit(0);
         }
